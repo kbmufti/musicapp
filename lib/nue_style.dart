@@ -16,14 +16,14 @@ class nueComponent extends StatelessWidget {
         boxShadow: [
           // right side shadow
           BoxShadow(
-              color: Colors.grey.shade500,
+              color: Colors.grey.shade700,
               blurRadius: 15,
               spreadRadius: 2,
               offset: const Offset(5, 5)),
 
           // left side shadow
           const BoxShadow(
-              color: Colors.white,
+              color: Colors.white70,
               blurRadius: 15,
               spreadRadius: 2,
               offset: Offset(-5, -5))
