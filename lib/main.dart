@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:musicapp/pages/songpage.dart';
+import 'package:musicapp/pages/homepage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(),
+      theme: ThemeData(
+        appBarTheme: const AppBarTheme(color: Colors.transparent),
+      ),
       home: song_page(),
     );
   }

@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors_in_immutables, camel_case_types, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:musicapp/example/tranc.dart';
 import 'package:musicapp/utilities/projectcards.dart';
 
 import '../utilities/drawerpage.dart';
@@ -21,7 +20,11 @@ class _song_pageState extends State<song_page> {
     ['Project two', 58000]
   ];
 
-  List<Color> colors = [Colors.black12, Colors.greenAccent, Colors.blueAccent];
+  List<Color> colors = [
+    Color.fromARGB(160, 44, 18, 83),
+    Color.fromARGB(230, 29, 23, 85),
+    Color.fromARGB(172, 14, 54, 66)
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -76,10 +79,8 @@ class _song_pageState extends State<song_page> {
                               fontSize: 20, fontWeight: FontWeight.bold),
                         ),
                       ),
-                     
                     ],
                   ),
-                  
                 ),
               ),
             ))
